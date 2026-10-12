@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import {createRoot} from 'react-dom/client';
 import {Scale, LayoutDashboard, FolderOpen, BookOpen, History, Settings, ChevronLeft, ArrowLeft, Plus, Search, Bell, ShieldCheck, Gavel, FileText, Clock3, MoreHorizontal, X, Check, Download, LogOut, PanelRightClose, SlidersHorizontal, Landmark, CircleHelp, ArrowUpRight, CheckCircle2} from 'lucide-react';
-import '@fontsource/vazirmatn/400.css';
-import '@fontsource/vazirmatn/500.css';
-import '@fontsource/vazirmatn/600.css';
-import '@fontsource/vazirmatn/700.css';
-import '@fontsource/vazirmatn/800.css';
+import '@fontsource/estedad/400.css';
+import '@fontsource/estedad/500.css';
+import '@fontsource/estedad/600.css';
+import '@fontsource/estedad/700.css';
+import '@fontsource/estedad/800.css';
 import './style.css';
+import './typography.css';
 type Case = {id:string;title:string;domain:string;stage:number;date:string;subject:string};
 const initial:Case[]=[{id:'۱۴۰۵ / ۰۰۱۲۴',title:'مطالبه وجه قرارداد',domain:'civil',stage:2,date:'۲۱ مهر ۱۴۰۵',subject:'مطالبه وجه'},{id:'۱۴۰۵ / ۰۰۱۱۸',title:'بررسی اتهام خیانت در امانت',domain:'criminal',stage:1,date:'۲۰ مهر ۱۴۰۵',subject:'خیانت در امانت'},{id:'۱۴۰۵ / ۰۰۱۰۹',title:'الزام به ایفای تعهد',domain:'civil',stage:3,date:'۱۹ مهر ۱۴۰۵',subject:'ایفای تعهد'}];
 const steps=['اسناد پرونده','بررسی وقایع','پژوهش حقوقی','تحلیل دوطرفه','پیش‌نویس','تاریخچه'];
